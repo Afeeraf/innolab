@@ -1,0 +1,187 @@
+Addition of two integers:
+
+#include<stdio.h>
+struct sum{
+    int a;
+    int b;
+    int r;
+};
+struct sum s;
+
+struct sum input()
+{
+    printf("Enter two nos.:\n");
+    scanf("%d%d",&s.a,&s.b);
+    return s;
+}
+
+struct sum compute()
+{
+    s.r = s.a + s.b;
+    return s;
+}
+
+struct sum output()
+{
+    printf("Addition of %d and %d is %d\n",s.a,s.b,s.r);
+}
+
+int main()
+{
+    struct sum s;
+    input();
+    compute();
+    output();
+}
+
+
+Addition of two float:
+
+
+#include<stdio.h>
+struct sum{
+    float a;
+    float b;
+    float r;
+};
+struct sum s;
+
+struct sum input()
+{
+    printf("Enter two nos.:\n");
+    scanf("%f%f",&s.a,&s.b);
+    return s;
+}
+
+struct sum compute()
+{
+    s.r = s.a + s.b;
+    return s;
+}
+
+struct sum output()
+{
+    printf("Addition of %f and %f is %f\n",s.a,s.b,s.r);
+}
+
+int main()
+{
+    struct sum s;
+    input();
+    compute();
+    output();
+}
+
+
+
+
+Compare two numbers:
+
+
+
+#include<stdio.h>
+struct sum{
+    int a;
+    int b;
+    int max;
+    int min;
+};
+struct sum s;
+
+struct sum input()
+{
+    printf("Enter two number to compare:\n");
+    scanf("%d%d",&s.a,&s.b);
+    return s;
+}
+
+struct sum compute()
+{
+    if(s.a>s.b){
+    s.max=s.a;
+    s.min=s.b;
+    }
+    else if(s.a<s.b){
+    s.max=s.b;
+    s.min=s.a;
+    }
+    return s;
+}
+
+struct sum output()
+{
+    if(s.max!=s.min){
+    printf("%d is greater than %d\n",s.max,s.min);
+    }
+    else{
+        printf("Both numbers are equal\n");
+    }
+}
+
+int main()
+{
+    struct sum s;
+    input();
+    compute();
+    output();
+}
+
+
+
+
+
+Compare three numbers:
+
+
+#include<stdio.h>
+struct sum{
+    int a;
+    int b;
+    int c;
+    int max;
+    int e;
+};
+struct sum s;
+
+struct sum input()
+{
+    printf("Enter three number to compare:\n");
+    scanf("%d%d%d",&s.a,&s.b,&s.c);
+    return s;
+}
+
+struct sum compute()
+{
+    if(s.a>s.b && s.a> s.c){
+        s.max=s.a;
+    }
+    else if(s.b>s.a && s.b>s.c){
+        s.max=s.b;
+    }
+    else if(s.c>s.a && s.c>s.b){
+        s.max = s.c;
+    }
+    return s;
+}
+
+struct sum output()
+{
+    if ( s.a == s.b && s.b == s.c)
+    {
+        printf("Every number is equal",s.a);
+    }
+    else
+    {
+        printf("%d is greater in all",s.max);
+    }
+}
+
+int main()
+{
+    struct sum s;
+    input();
+    compute();
+    output();
+}
+
+
